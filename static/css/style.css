@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    overflow-y: hidden;
+    overflow-y: visible; 
     font-family: 'DIN 2014';
     font-style: normal;
 }
@@ -14,36 +14,59 @@ header {
     position: absolute;
     left: 38px;
     top: 0px;
+    height: 100vh;
 }
 h1 {
     position: absolute;
-    width: 976px;
     height: 153px;
-    left: 179px;
-    top: 439px;
+    left: 11%;
+    top: 40%;
     font-weight: 800;
-    font-size: 120px;
+    font-size: 900%;
     line-height: 153px;
     color: #FDFDFD;
     margin:0;
 }
 h2 {
     position: absolute;
-    width: 323px;
     height: 51px;
-    left: 179px;
-    top: 380px;
+    left: 11%;
+    top: 33%;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 300%;
     line-height: 51px;
     color: #FDFDFD;
     margin:0;
+}
+h3 {
+    color: #223871;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 51.04px;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+h4 {
+    color: #223871;
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 0;
+    margin-top: 0;
+    width: 95%;
+}
+h5 {
+    font-weight: 300;
+    line-height: 30px;
+    font-size: 30px;
+    color: #223876;
 }
 .eofy {
     position: absolute;
     width: 653px;
     height: 65px;
-    left: 336px;
+    left: 105%;
     top: -8px;
     font-family: 'Marydale';
     font-style: normal;
@@ -56,8 +79,8 @@ button {
     position: absolute;
     width: 11.9%;
     height: 54px;
-    left: 179px;
-    top: 615px;
+    left: 11%;
+    top: 60%;
     background: #F7991C;
     border-radius: 88px;
     font-weight: 700;
@@ -70,23 +93,19 @@ button {
 .logo {
     position: absolute;
     left: 6.25%;
-    right: 71.97%;
     top: 0%;
     bottom: 82.75%;
 }
 .disclaimer {
     position: absolute;
-    width: 665px;
-    height: 25px;
-    left: 179px;
-    top: 960px;
+    left: 11%;
+    top: 90%;
     font-weight: 300;
     font-size: 16px;
     line-height: 25px;
     text-align: center;
     color: #FFFFFF; 
 }
-
 .topnav #myLinks {
     display: none;
     width: auto;
@@ -107,6 +126,115 @@ button {
     position: absolute;
     right: 14.17%;
     top: 8.09%;
+}
+.benefitgrid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 250px;
+}
+.benefitgrid card {
+    width: 30%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.benefitgrid card img {
+    position: relative;
+    top: 15%;
+}
+.benefitgrid card p {
+    color: #545454;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 15px;
+    width: 89%
+}
+.contractpara {
+    width: 75% !important;
+}
+.benefitgrid card a {
+    color:#F7991C;
+    font-weight: 700;
+    font-size: 20px;
+    text-decoration: none;
+}
+#building {
+    right: 55px;
+}
+#contract {
+    right: 40px;
+}
+#legal {
+    right: 45px;
+    top: 35px;
+}
+#training {
+    top: 38px;
+    right: 45px;
+}
+#insurance {
+    top: 38px;
+    right: 45px;
+}
+#workplace {
+    top: 38px;
+    right: 80px;
+}
+.discountCard {
+    display: inline-block;
+    position: relative;
+    width: 282px;
+    height: 209px;
+    margin: auto auto 50px auto;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.13);
+    background-image: url(../img/Rectangle\ 41.png);
+    background-repeat: no-repeat no-repeat;
+}
+.discountCard img {
+    float: left;
+    padding: 20px;
+    top: 0px;
+}
+.discountCard p {
+    float: right;
+    color: white;
+}
+.moreben {
+    color:#F7991C;
+    font-weight: 700;
+    font-size: 20px;
+}
+.discounts {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    margin: auto;
+}
+#member {
+    text-align: center;
+    margin-bottom: 350px;
+}
+.tr, .mr {
+    padding-bottom: 60px;
+
+    border-bottom: 0.25px solid rgba(197, 197, 197, 0.5);
+}
+.tl, .ml {
+    padding-bottom: 60px;
+    border-bottom: 0.25px solid rgba(197, 197, 197, 0.5);
+    border-right: 0.25px solid rgba(197, 197, 197, 0.5);
+}
+.bl {
+    border-right: 0.25px solid rgba(197, 197, 197, 0.5);
+}
+.tr, .mr, .br {
+    padding-left: 200px;
+}
+.tl, .ml, .bl {
+    padding-left: 150px;
 }
 
 
