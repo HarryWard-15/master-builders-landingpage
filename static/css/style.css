@@ -76,7 +76,7 @@ h5 {
     line-height: 65px;
     color: #F7991C;
 }
-button {
+.joinnow {
     position: absolute;
     width: 11.9%;
     height: 54px;
@@ -122,6 +122,10 @@ button {
     display: block;
     font-size: 30px;
 }
+.topnav a:hover {
+    color:#F7991C;
+}
+
 .topnav a.icon {
     display: block;
     position: absolute;
@@ -164,6 +168,10 @@ button {
     font-weight: 700;
     font-size: 20px;
     text-decoration: none;
+}
+
+.benefitgrid card a:hover{
+    color:#16264F;
 }
 #building {
     right: 55px;
@@ -225,6 +233,9 @@ a {
     color:#F7991C;
     font-weight: 700;
     font-size: 20px;
+}
+.moreben:hover {
+    color:#16264F;
 }
 .discounts {
     display: flex;
@@ -315,5 +326,55 @@ a {
 .memberstitle {
     text-align: left;
     width: 40%;
+}
+.btn {
+    position: absolute;
+    bottom: -30%;
+    left: 1%;
+    width: 11.9%;
+    height: 54px;
+    background: #F7991C;
+    border-radius: 88px;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 32px;
+    color: #FDFDFD;
+    margin: 20px;
+    border:none;
+}
+form {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 250px;
+}
+input, select {
+    background: #f8faff;
+    border: none;
+    color: #213876;
+    text-indent: 10px;
+    font-size: 20px;
+    width: 44%;
+    padding: 15px;
+    margin: 20px 25px 20px 25px;
+}
+select {
+    width: 46%;
+}
+input::placeholder {
+    color: #213876;
+}
+
+button:hover {
+    background: #2C4B9D;
+}
+.joinheader {
+    text-align: left;
+    width: 76%;
+    margin: auto;
+    margin-bottom: 50px;
 }
 

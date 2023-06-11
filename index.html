@@ -25,7 +25,7 @@
       </div>
     <h2>That moment when <span class="eofy">you sign up just in time for EOFY!*</span></h2>
     <h1>We Know <span id="spanCycle"></span><span id="blinker">|</span></h1>
-    <button href="#join">Join Now</button>
+    <button class="joinnow" href="#join">Join Now</button>
     <p class="disclaimer">*Membership is Tax Deductible and you can now pay membership fees in equal monthly instalments.</p>
   </header>
 
@@ -160,16 +160,31 @@
     </section>
 
     <section id="join">
-      <h3>Join Us</h3>
+      <h3 class="joinheader">Join Us</h3>
       <div class="join">
-
+        <form>
+          <input type="text" name="firstname" id="firstname" placeholder="First Name">
+          <input type="text" name="lastname" id="lastname" placeholder="Last Name">
+          <input type="text" name="phone" id="phone" placeholder="Phone">
+          <input type="text" name="email" id="email" placeholder="Email">
+          <input type="text" name="companyname" id="company name" placeholder="Company Name*">
+          <input type="text" name="address" id="address" placeholder="Street Address">
+          <input type="text" name="postcode" id="postcode" placeholder="Postcode">
+          <select name="state" id="state" placeholder="State">
+            <option value="" disabled selected hidden>State</option>
+            <option value="ACT">ACT</option>
+            <option value="ACT">NSW</option>
+            <option value="ACT">NT</option>
+            <option value="ACT">QLD</option>
+            <option value="ACT">TAS</option>
+            <option value="ACT">VIC</option>
+            <option value="ACT">WA</option>
+          </select>
+          <button class="btn" type="submit">Submit</button>
+        </form>
       </div>
     </section>
   </main>
-
-  <footer>
-    <p>&copy; 2023 Your Website. All rights reserved.</p>
-  </footer>
 
   <script src="./static/js/script.js"></script> 
 </body>
