@@ -1,8 +1,9 @@
 const spanCycle = document.getElementById('spanCycle');
 const blinker = document.getElementById('blinker');
+const loadMore = document.getElementById('loadMore');
+const hiddenBenefits = document.getElementById('hiddenBenefits');
 
 const cycleValues = ["Builders.","Apprentices.","Subbies.","Sparkies.","Chippies.","Managers.","Draftsmen.","Painters.","Welders.","Brickies."];
-
 
 setInterval(function() {
   if (blinker.style.display === "none") {
@@ -53,6 +54,16 @@ function displayWord() {
   typeWord();
 }
 
+function loadMoreBenefits() {
+  if (hiddenBenefits.style.display == 'none') {
+    hiddenBenefits.style.display = 'inline-block';
+    loadMore.innerHTML = "Hide More Benefits";
+  } else {
+    hiddenBenefits.style.display = 'none';
+    loadMore.innerHTML = "Load More Benefits";
+  }
+}
 
+loadMore.addEventListener('click', loadMoreBenefits);
 displayWord()
 

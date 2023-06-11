@@ -9,6 +9,7 @@ header {
     background-color: #16264F;
     height: 100vh;
     color: #FDFDFD;
+    margin-bottom: 300px;
 }
 .heroImg {
     position: absolute;
@@ -155,6 +156,9 @@ button {
 .contractpara {
     width: 75% !important;
 }
+#hiddenBenefits {
+    display: none;
+}
 .benefitgrid card a {
     color:#F7991C;
     font-weight: 700;
@@ -187,20 +191,35 @@ button {
     display: inline-block;
     position: relative;
     width: 282px;
-    height: 209px;
-    margin: auto auto 50px auto;
+    height: 200px;
+    margin: auto 20px 50px 20px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.13);
     background-image: url(../img/Rectangle\ 41.png);
     background-repeat: no-repeat no-repeat;
+}
+.discountCard:hover {
+    background-image: url(../img/bgorange.png);
 }
 .discountCard img {
     float: left;
     padding: 20px;
     top: 0px;
 }
+.discountCard h5 {
+    position: absolute;
+    bottom: -20px;
+    width: 270px;
+    left: 10px;
+    text-align: left;
+}
+a {
+    text-decoration: none;
+}
 .discountCard p {
-    float: right;
+    position: absolute;
     color: white;
+    right:5px;
+    
 }
 .moreben {
     color:#F7991C;
@@ -210,7 +229,8 @@ button {
 .discounts {
     display: flex;
     flex-wrap: wrap;
-    width: 50%;
+    justify-content: center;
+    width: 60%;
     margin: auto;
 }
 #member {
@@ -236,5 +256,64 @@ button {
 .tl, .ml, .bl {
     padding-left: 150px;
 }
-
+.box3 {
+    width: 80%;
+    margin: 30px;
+    border-radius: 15px;
+    background: #f8faff;
+    color: #213876;
+    padding: 30px;
+    font-weight: 300;
+    position: relative;
+}
+.special {
+    background: #213876;
+    color: white;
+}
+.sb15:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 15px solid transparent;
+    border-right: 15px solid #213876;
+    border-top: 15px solid #213876;
+    border-bottom: 15px solid transparent;
+    left: -16px;
+    top: 0px;
+}
+.sb14:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 15px solid transparent;
+    border-right: 15px solid #f8faff;
+    border-top: 15px solid #f8faff;
+    border-bottom: 15px solid transparent;
+    left: -16px;
+    top: 0px;
+}
+#testimonials {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+    margin-bottom: 300px;
+}
+.quotesmiddle, .quotesright {
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+    justify-content: center;
+}
+.testleft {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+.memberstitle {
+    text-align: left;
+    width: 40%;
+}
 
